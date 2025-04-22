@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #ffffff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fde68a;
+    border-radius: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.btn {
+    background: #1f2937;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: #4b5563;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.impact-stories {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.story-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 20px;
+    width: 300px;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.volunteer {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.volunteer-form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.volunteer-form input,
+.volunteer-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.adoption-carousel {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pet-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 15px;
+    width: 200px;
+}
+
+.pet-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.chatbot {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.chatbot-placeholder {
+    margin: 20px auto;
+    max-width: 400px;
+    border: 2px dashed #9ca3af;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Hover Effects for Buttons */
+.btn:hover {
+    background: #374151;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #6b7280;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: #f6e88c;
+    padding: 100px 20px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.5);
+}
+
+.hero h1,
+.hero p,
+.button-group {
+    position: relative;
+    z-index: 2;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+.hero h1,
+.hero p,
+.button-group {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero p {
+    animation-delay: 0.3s;
+}
+
+.button-group {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.volunteer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.volunteer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.pawbuddy-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4e5d94;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.pawbuddy-button:hover {
+    background-color: #394476;
+}
+
+.pawbuddy-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.chat-header {
+    background: #4e5d94;
+    color: #fff;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-log {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#userInput {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.pawbuddy-popup button {
+    width: 30%;
+    border: none;
+    padding: 10px;
+    background-color: #4e5d94;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pawbuddy-popup button:hover {
+    background-color: #394476;
+}
+
+.close-btn {
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.impact-stories {
+    text-align: center;
+    padding: 40px 20px;
+}
+.story-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.read-more {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background: #ff914d;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.full-story {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+nav a {
+    position: relative;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #f97316; /* warm orange hover */
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: #f97316;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* Base Reset & Layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  /* Responsive Navbar */
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  nav ul li {
+    margin: 10px 15px;
+    font-size: 1rem;
+  }
+  
+  /* Cards in a Grid */
+  .story-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  /* Chatbot Popup */
+  .pawbuddy-popup {
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    bottom: 80px;
+    right: 20px;
+    position: fixed;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+  }
+  
+  /* Chat Toggle Button */
+  .pawbuddy-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    max-width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 1rem;
+    background: #2d3e50;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Footer social icons */
+  .footer-social a img {
+    width: 28px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .pawbuddy-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin: 5px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .pawbuddy-popup {
+      width: 95%;
+      right: 2.5%;
+      height: 85vh;
+    }
+  }
+  
