@@ -564,5 +564,78 @@ body {
         margin-bottom: 70px;
     }
 }
+/* === Mobile Fix: Navbar and Content Centering === */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        margin-right: auto;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        margin: 10px 0;
+    }
+
+    .hero p {
+        max-width: 90%;
+        font-size: 1rem;
+        margin: 0 auto 15px;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .volunteer {
+        text-align: center;
+        padding: 20px 10px;
+        margin: 0 auto;
+    }
+
+    .volunteer-form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .chatbot-placeholder {
+        margin-bottom: 80px;
+    }
+}
 
   
