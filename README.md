@@ -1,5 +1,5 @@
-# PetFriendlyCity
-🐾 PawBuddy — Pet Adoption & Volunteer Platform
+# PetFriendlyCity , 🐾 PawBuddy — Pet Adoption & Volunteer Platform
+
 Welcome to PawBuddy — a heartwarming web platform designed to connect kind souls with lovable pets! Whether you're looking to adopt, volunteer, or simply read uplifting pet stories, PawBuddy makes it easy and fun to get involved.
 
 🌟 Features
